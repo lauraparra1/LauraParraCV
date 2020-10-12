@@ -1,0 +1,164 @@
+/* Eliges la fuente */
+
+@font-face {
+    font-family:sans-serif;
+}
+
+/* con grid se acomodan los elementos */
+
+body {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto 50%;
+    background-color: lightcoral;
+}
+
+/* Mayúsculas para el nombre y frase */
+
+h1, h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color:lightpink;
+    border: 1px inset gray;
+    outline: 4px outset gray;
+    outline-offset: 3px;
+
+
+}
+
+h2 {
+    color: white;
+}
+
+
+
+/* defines el tamaño de la tabla*/
+
+table {
+    grid-column: span 2;
+    width: 100%;
+    border: 2px solid pink;
+}
+
+caption {
+    color: lightpink;
+    font-size: 1.2em;
+    font-family:sans-serif;
+}
+
+th {
+    background-color:whitesmoke;
+    font-family: mCanvas;
+}
+
+/* se define el borde del contenido y el tamaño de las columnas */
+
+th, td {
+    border: 1px solid black;
+    width: 10%;
+}
+
+#laura2 {
+    width: 100%;
+}
+
+/* Para crear el borde de la imagen */
+
+#roundPic {
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border: 6px solid rgb(44, 44, 44);
+    border-radius: 50%;
+}
+
+
+}
+
+.output {
+    background: lightcoral;
+}
+
+/* con content se declara cada texto de la tabla */
+
+#curso1::before {
+    content: "clase";
+}
+
+#curso2::before {
+    content: "Trabajo";
+}
+
+#curso3::before {
+    content: "Piano";
+}
+
+#curso4::before {
+    content: "Tenis";
+}
+
+#curso5::before {
+    content: "nadar";
+}
+
+#libre::before {
+    content: "Libre";
+}
+
+/* para cambiar el color de cada curso */
+
+#hora {
+    background-color: lightpink;
+    color: white;
+}
+
+#curso1 {
+    background-color: lightpink;
+    color: white;
+}
+
+#curso2 {
+    background-color: lightpink;
+    color: white;
+}
+
+#curso3 {
+    background-color: lightpink;
+    color: white;
+}
+
+#curso4 {
+    background-color: lightpink;
+    color: white;
+}
+
+#curso5 {
+    background-color:lightpink;
+    color: white;
+}
+
+#libre {
+    background-color: lightpink;
+    color: white;
+}
+
+
+#descanso {
+    background-color: lightpink;
+    color: white;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+.footer {
+  height: 4rem;
+  background-color:whitesmoke
+}
+
